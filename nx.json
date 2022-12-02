@@ -66,14 +66,18 @@
       "style": "scss",
       "linter": "eslint",
       "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "e2eTestRunner": "cypress",
+      "standalone": true
     },
     "@nrwl/angular:library": {
       "linter": "eslint",
-      "unitTestRunner": "jest"
+      "unitTestRunner": "jest",
+      "style": "scss",
+      "standalone": true
     },
     "@nrwl/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "standalone": true
     }
   },
   "defaultProject": "shell"

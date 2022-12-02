@@ -5,7 +5,7 @@ module.exports = withModuleFederationPlugin({
   name: 'remote',
 
   exposes: {
-    './Routes': './apps/remote/src/app/app.routes.ts',
+    './Routes': './apps/remote/src/app/proxy/proxy.routes.ts',
   },
 
   shared: {

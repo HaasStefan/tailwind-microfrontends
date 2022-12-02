@@ -4,8 +4,8 @@ import {
   withEnabledBlockingInitialNavigation,
 } from '@angular/router';
 import { AppComponent } from './app/app.component';
-import { routes } from './app/app.routes';
+import { appRoutes } from './app/app.routes';
 
 bootstrapApplication(AppComponent, {
-  providers: [provideRouter(routes, withEnabledBlockingInitialNavigation())],
+  providers: [provideRouter(appRoutes, withEnabledBlockingInitialNavigation())],
 }).catch((err) => console.error(err));

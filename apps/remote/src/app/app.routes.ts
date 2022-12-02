@@ -1,9 +1,8 @@
 import { Route } from '@angular/router';
 
-export const routes: Route[] = [
+export const appRoutes: Route[] = [
     {
         path: '',
-        loadChildren: async () =>
-        (await import('@tailwind-microfrontends/remote-lib')).routes
+        loadChildren: async () => (await import('./proxy/proxy.routes')).routes
     }
 ];
